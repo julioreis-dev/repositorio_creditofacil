@@ -61,4 +61,5 @@ o projeto inicialmente consome a API referente ao fluxo de ofertas e inseri no B
 A inclusão de um cliente no BD somente ocorrerá se o mesmo tiver uma oferta válida, caso exista, todos os dados serão incluídos juntamente com o id da proposta e o status da proposta tais dados serão inseridos na tabela "clientes", o id da proposta e o status são dados que fazem parte do retorno da API de envio da proposta. Tal registros se faz necessário para caso seja feito um novo registro do cliente, possa se verificar por meio do id da proposta se a ultimma proposta encaminhada encontra-se dentro do período de 30 dias como foi solicitado no desafio. Toda e qualquer proposta que tenha sido enviada antes de 30 dias não terá os seus registros inseridos na tabela "clientes" e a aplicação irá apresentar uma mensagem de protocolo comprovando que o cliente já possui oferta válida e cadastrada. Caso se tente cadastrar um cliente que não possui oferta válida a aplicação informará que o cliente não possui oferta.
 
 Tutorial de uso:
+
 Apos adotadas todas as orientações iniciais, basta rodar o código "project.py" e seguir as instruções de cadastramento informadas pela aplicação.
