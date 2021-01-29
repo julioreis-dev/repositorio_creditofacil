@@ -4,8 +4,11 @@ Este repositório tem como finalidade hospedar o projeto de teste técnico desen
 Ambiente de desenvolvimento:
 
 Linguagem : Python 3.8;
+
 IDE : Pycharm;
+
 Bibliotecas : requests, Mysql.connector, Datetime, timedelta, environs e json.
+
 Banco de Dados: Mysql.
 
 Orientações iniciais:
