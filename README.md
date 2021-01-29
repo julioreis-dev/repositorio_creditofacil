@@ -43,3 +43,10 @@ cliente informando que o mesmo já enviou uma proposta para esta oferta. Caso el
 não tenha enviado, precisamos salvar essa proposta para um envio posterior e enviála.
 O retorno deste endpoint será um id da proposta e uma mensagem.
 Obs.: Uma proposta é composta pelos dados do cliente e da oferta.
+
+Solução:
+
+O projeto desenvolvido atendeu a todos os requisitos solicitados no escopo do desafio. Diante da necessidade de proteger o fluxo de dados foi necesário desenvolver todo o projeto tendo como necessidade a criação de variavel de ambiente afim de proteger os endpoints utilizados e as variaveis necessárias para a conexão com o bando de dados.
+A aplicação inicialmente consome a API referente ao fluxo de ofertas e inseri no BD, durante 10 minutos todo o cadastro de um cliente terá os seus dados checados por meio dos dados presentes no BD, neste momento a API deixa de ser usada e somente apos esse período a aplicação renova os dados fazendo com que todo o conteúdo seja excluído e seja realizado uma nova chamada da API e iserindo os dados no BD.
+A inclusão de um cliente no BD somente ocorrerá se o mesmo tiver uma oferta válida, caso exista, todos os dados serão incluídos juntamente com o id da proposta e o status da proposta, dados estes que fazem parte do retorno da API de envio da proposta. Tal registros se faz necessário para caso seja feito um novo registro do cliente, possa se verificar por meio do id da proposta se a ultimma proposta válida encontra-se dentro do período de 30 dias com foi solicitado no desafio. Se a ultima proposta válida tiver sido encaminhada com o prazo menor do que 30 dias a aplicação irá mostra um protocolo comprovanto que o cliente já possui oferta válida e cadastrada.
+Caso se tente cadastrar um cliente que não possui oferta válida a aplicação informará que o cliente não possui oferta válida.
