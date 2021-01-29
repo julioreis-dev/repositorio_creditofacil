@@ -1,7 +1,7 @@
 export NT_offer_endpoint = “(Preencher_endpoint_da_oferta)”
 export NT_proposal_endpoint = “(Preencher_endpoint_da_proposta)”
-export NT_BD_HOST = “(Preencher_host)”
+export NT_BD_HOST = “(Preencher_host_banco-de_dados)”
 export NT_BD_DATABASE = “(Preencher_nome_banco_de_dados)”
-export NT_BD_USER = “(Preencher_user)”
-export NT_BD_PASSWORD = “(Preencher_senha)”
+export NT_BD_USER = “(Preencher_user_banco_de_dados)”
+export NT_BD_PASSWORD = “(Preencher_senha_banco_de_dados)”
 export NT_BD_PORT = “(Preencher_porta)” *****Número Inteiro*****
