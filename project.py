@@ -1,8 +1,18 @@
 import json
 import requests
 import mysql.connector
+import project_bd as bd
 from environs import Env
 from datetime import datetime, timedelta
+
+"""Orientações iniciais que deverão ser adotados para que a solução funcione corretamente.
+Passo 1 - Instalar a biblioteca "environs" por meio do terminal do seu editor de texto. Ex: pip install environs
+Passo 2 - Instalar a biblioteca "mysql-connector" por meio do terminal do seu 
+editor de texto. ex: pip install mysql-connector
+Passo 3 - Preencher os dados solicitados no arquivo nomeado "modelo_env.txt", o referido arquivo é um modelo que foi 
+utilizado como variável de ambiente.
+Passo 4 - Criar um arquivo ".env", dentro da mesma pasta que esta os projetos, copiar todo o conteúdo do 
+arquivo "modelo_env.txt" e colar no arquivo ".env" que foi criado."""
 
 
 class ConnectionBD:
@@ -211,7 +221,8 @@ if __name__ == "__main__":
     user = env.str('NT_BD_USER')
     password = env.str('NT_BD_PASSWORD')
     port = env.int('NT_BD_PORT')
-
+    # Set database
+    bd.main()
     # Creating instance with class ConnectionBD
     connectbd = ConnectionBD(host, database, user, password, port)
     # Creating instance with class ConnectionApi
