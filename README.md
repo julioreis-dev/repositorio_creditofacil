@@ -39,10 +39,11 @@ O retorno deste endpoint será um id da proposta e uma mensagem.
 Obs.: Uma proposta é composta pelos dados do cliente e da oferta.
 
 Preparação do ambiente
-Apenas dois passos deverão ser adotados para que a solução funcione corretamente.
-Passo 1 - Copiar o arquivo para uma pasta que será usada pelo editor de texto de sua preferencia.
-Passo 2 - Instalar a biblioteca environs. Ex: pip install environs
-Passo 3 - Preencher os dados com os endpoints e dados sensíveis e criar um arquivo ".env" que deverá estar na mesma pagina do projeto. O arquivo nomeado "modelo_env.text" tem o modelo que deverá ser utilizado no projeto. 
+Orientações iniciais que deverão ser adotados para que a solução funcione corretamente.
+Passo 1 - Copiar o arquivo "project.py" para uma pasta que será usada pelo editor de texto de sua preferencia.
+Passo 2 - Instalar a biblioteca "environs" por meio do terminal do seu editor de texto. Ex: pip install environs
+Passo 3 - Preencher os dados solicitados no arquivo nomeado "modelo_env.txt", o referido arquivo é o modelo que foi utilizado como variável de ambiente.
+Passo 4 - Criar um arquivo ".env", dentro da mesma pasta que esta o projeto principal, que deverá conter todos os dados preenchidos no arquivo "modelo_env.txt".  
 
 
 
