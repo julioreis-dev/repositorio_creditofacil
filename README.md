@@ -7,6 +7,14 @@ IDE : Pycharm;
 Bibliotecas : requests, Mysql.connector, Datetime, timedelta, environs e json.
 Banco de Dados: Mysql.
 
+Preparação do ambiente
+Orientações iniciais que deverão ser adotados para que a solução funcione corretamente.
+Passo 1 - Copiar o arquivo "project.py" para uma pasta que será usada pelo editor de texto de sua preferencia.
+Passo 2 - Instalar a biblioteca "environs" por meio do terminal do seu editor de texto. Ex: pip install environs
+Passo 3 - Instalar a biblioteca "mysql-connector" por meio do terminal do seu editor de texto. ex: pip install mysql-connector
+Passo 4 - Preencher os dados solicitados no arquivo nomeado "modelo_env.txt", o referido arquivo é um modelo que foi utilizado como variável de ambiente.
+Passo 5 - Criar um arquivo ".env", dentro da mesma pasta que esta o arquivo "project.py", que deverá conter todos os dados preenchidos no arquivo "modelo_env.txt".  
+
 Desafio
 
 2.1 – O marketplace
@@ -37,14 +45,3 @@ cliente informando que o mesmo já enviou uma proposta para esta oferta. Caso el
 não tenha enviado, precisamos salvar essa proposta para um envio posterior e enviála.
 O retorno deste endpoint será um id da proposta e uma mensagem.
 Obs.: Uma proposta é composta pelos dados do cliente e da oferta.
-
-Preparação do ambiente
-Orientações iniciais que deverão ser adotados para que a solução funcione corretamente.
-Passo 1 - Copiar o arquivo "project.py" para uma pasta que será usada pelo editor de texto de sua preferencia.
-Passo 2 - Instalar a biblioteca "environs" por meio do terminal do seu editor de texto. Ex: pip install environs
-Passo 3 - Preencher os dados solicitados no arquivo nomeado "modelo_env.txt", o referido arquivo é o modelo que foi utilizado como variável de ambiente.
-Passo 4 - Criar um arquivo ".env", dentro da mesma pasta que esta o projeto principal, que deverá conter todos os dados preenchidos no arquivo "modelo_env.txt".  
-
-
-
-
