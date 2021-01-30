@@ -51,7 +51,7 @@ def main():
                     inclusao DATETIME NULL,
                     PRIMARY KEY (idofertas))"""
 
-    list_sql = [sql1, sql2]
+    list_sql = (sql1, sql2)
     env = Env()
     env.read_env()
     host = env.str('NT_BD_HOST')
